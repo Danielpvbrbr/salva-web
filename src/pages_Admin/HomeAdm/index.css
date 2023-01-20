@@ -1,0 +1,626 @@
+#HomeAdm #body {
+    width: 100vw;
+    height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#HomeAdm #containGraphic {
+    width: 1100px;
+    height: 250px;
+    background-color: #fff;
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#HomeAdm #containGraphic .progressbar {
+    width: 190px;
+    height: 190px;
+    margin-top: -35px;
+}
+
+#HomeAdm .progressbar #textCicleKg {
+    width: 50px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #32641B;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 30px;
+    position: relative;
+    top: 73px;
+    left: 130px;
+}
+
+#HomeAdm .progressbar #textCiclePt {
+    width: 50px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #DF4428;
+    font-weight: bold;
+    color: #FFF;
+    border-radius: 30px;
+    position: relative;
+    top: 73px;
+    left: 130px;
+
+}
+
+#HomeAdm #containGraphic #graphic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+#HomeAdm #containGraphic #titleGraphic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#HomeAdm #containRescues {
+    width: 1100px;
+    height: 410px;
+    background-color: #fff;
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow-y: scroll;
+}
+
+#HomeAdm #containRescues #titleRescues {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#HomeAdm #containRescues #contRescues {
+    width: 98%;
+    height: 60px;
+    border: 1px solid rgb(139, 139, 139);
+    margin-bottom: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* #HomeAdm #containRescues #contRescues {
+    width: 100%;
+    
+} */
+
+
+@media (min-width: 319.98px) and (max-width: 413.98px) {
+    #HomeAdm #body {
+        width: 100vw;
+        height: 90vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+    }
+
+    #HomeAdm #containGraphic {
+        width: 90%;
+        height: 200px;
+        background-color: #FFF;
+        -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    #HomeAdm #containGraphic .progressbar {
+        width: 90px;
+        height: 90px;
+        margin-top: -25px;
+    }
+
+    #HomeAdm .progressbar #textCicleKg {
+        width: 30px;
+        height: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #32641B;
+        color: #FFF;
+        font-weight: bold;
+        border-radius: 30px;
+        position: relative;
+        font-size: 8pt;
+        top: 35px;
+        left: 55px;
+    }
+
+    #HomeAdm .progressbar #textCiclePt {
+        width: 30px;
+        height: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #d64b33bb;
+        font-weight: bold;
+        color: #FFF;
+        border-radius: 30px;
+        font-size: 7pt;
+        position: relative;
+        top: 35px;
+        left: 55px;
+
+    }
+
+    #HomeAdm #containGraphic #graphic {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+    #HomeAdm #containGraphic #titleGraphic {
+        font-size: 12px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #HomeAdm #containRescues {
+        width: 90%;
+        height: 90%;
+        background-color: #fff;
+        -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #HomeAdm #containRescues #titleRescues {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #HomeAdm #containGraphic #titleGraphic h3 {
+        font-size: 12pt;
+    }
+
+  
+}
+
+@media (min-width: 413.98px) and (max-width: 480.98px) {
+    #HomeAdm #body {
+        width: 100vw;
+        height: 90vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+    }
+
+    #HomeAdm #containGraphic {
+        width: 90%;
+        height: 20%;
+        background-color: #FFF;
+        -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    #HomeAdm #containGraphic .progressbar {
+        width: 117px;
+        height: 117px;
+        margin-top: -11px;
+    }
+
+    #HomeAdm .progressbar #textCicleKg {
+        width: 35px;
+        height: 35px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #32641B;
+        color: #FFF;
+        font-weight: bold;
+        border-radius: 30px;
+        font-size: 8pt;
+        position: relative;
+        top: 45px;
+        left: 85px;
+    }
+
+    #HomeAdm .progressbar #textCiclePt {
+        width: 35px;
+        height: 35px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #DF4428;
+        font-weight: bold;
+        color: #FFF;
+        border-radius: 30px;
+        font-size: 8pt;
+        position: relative;
+        top: 45px;
+        left: 85px;
+
+    }
+
+    #HomeAdm #containGraphic #graphic {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+    #HomeAdm #containGraphic #titleGraphic {
+        font-size: 12px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #HomeAdm #containRescues {
+        width: 90%;
+        height: 70%;
+        background-color: #fff;
+        -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #HomeAdm #containRescues #titleRescues {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #HomeAdm #containGraphic #titleGraphic h3 {
+        font-size: 12pt;
+    }
+
+    #HomeAdm #containRescues #contRescues {
+        width: 94%;
+        height: 60px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+
+}
+
+@media (min-width: 480.98px) and (max-width: 991.98px) {
+
+    #HomeAdm #body {
+        width: 100vw;
+        height: 90vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+    }
+
+    #HomeAdm #containGraphic {
+        width: 90%;
+        height: 25%;
+        background-color: #FFF;
+        -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    #HomeAdm #containGraphic .progressbar {
+        width: 120px;
+        height: 120px;
+        margin-top: -15px;
+    }
+
+    #HomeAdm .progressbar #textCicleKg {
+        width: 35px;
+        height: 35px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #32641B;
+        color: #FFF;
+        font-weight: bold;
+        border-radius: 30px;
+        font-size: 8pt;
+        position: relative;
+        top: 45px;
+        left: 85px;
+    }
+
+    #HomeAdm .progressbar #textCiclePt {
+        width: 35px;
+        height: 35px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #DF4428;
+        font-weight: bold;
+        color: #FFF;
+        border-radius: 30px;
+        font-size: 8pt;
+        position: relative;
+        top: 45px;
+        left: 85px;
+
+    }
+
+    #HomeAdm #containGraphic #graphic {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+    #HomeAdm #containGraphic #titleGraphic {
+        font-size: 12px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #HomeAdm #containRescues {
+        width: 90%;
+        height: 90%;
+        background-color: #fff;
+        -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #HomeAdm #containRescues #titleRescues {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #HomeAdm #containGraphic #titleGraphic h3 {
+        font-size: 12pt;
+    }
+
+    #HomeAdm #containRescues #contRescues {
+        width: 97%;
+        height: 60px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+   
+}
+
