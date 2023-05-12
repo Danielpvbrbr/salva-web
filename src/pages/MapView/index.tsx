@@ -12,7 +12,7 @@ const render = (status: Status) => {
 };
 
 const MapView: React.VFC = ({ AuthContext }) => {
-  const { addAddres, user } = React.useContext(AuthContext);
+  const { addAddres, user, signOut } = React.useContext(AuthContext);
   const [clicks, setClicks] = React.useState<google.maps.LatLng[]>([]);
   const [zoom, setZoom] = React.useState(16); // initial zoom
   const [city, setCity] = React.useState();
@@ -101,7 +101,7 @@ const MapView: React.VFC = ({ AuthContext }) => {
         overflow: "auto",
       }}
     >
-      
+
       <LocationSearchInput getDate={getDate} />
       <label htmlFor="zoom">Zoom</label>
       <input
@@ -191,6 +191,14 @@ const MapView: React.VFC = ({ AuthContext }) => {
 
       <button id="btnClear" style={{ width: '100%', height: 35, marginTop: 10 }} onClick={() => setClicks([])}>Limpar</button>
       <button id="btnSbm" style={{ width: '100%', height: 35, marginTop: 10 }} onClick={HandelSubmit}>Salvar</button>
+      <button id="btnSbm" style={{
+        width: '100%',
+        height: 35,
+        marginTop: 10,
+        backgroundColor: '#B22222',
+        color: '#fff',
+        border: 'none'
+      }} onClick={signOut}>Ja Cadastrei?</button>
     </div>
   );
 

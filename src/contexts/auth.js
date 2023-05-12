@@ -2,6 +2,8 @@ import React, { useState, createContext, useEffect } from 'react';
 
 import api from '../services/api';
 import socket from '../services/socket';
+import { format } from 'date-fns'
+
 export const AuthContext = createContext({});
 // eslint-disable-next-line import/first
 import firebase from '../services/firebaseConnection';
@@ -68,6 +70,43 @@ export default function AuthProvider({ children }) {
         loadingStorage()
     }, []);
 
+    function expiration() {
+        const dd = format(new Date(), 'dd');
+        const MM = format(new Date(), 'MM');
+        // const yyy = format(new Date(), 'yyy');
+        const chaves = ['04', '06', '09', '11'];
+
+        if (chaves.indexOf(MM) !== -1) {
+            if ((Number(dd.split('')[0])) === 0) {
+                return (`0${Number(dd.split('')[1]) + 1}-${format(new Date(), 'MM-yyy')}`)
+            } else {
+                return (`${Number(dd) + 1}-${format(new Date(), 'MM-yyy')} `)
+            }
+        } else {
+            if ((Number(dd.split('')[0])) === 0) {
+                return (`0${Number(dd.split('')[1]) + 1}-${format(new Date(), 'MM-yyy')}`)
+            } else {
+                return (`01-0${Number(MM) + 1}-${format(new Date(), 'yyy')}`)
+            }
+        }
+
+    };
+
+    useEffect(() => {
+        async function _() {
+            const storageUser = await localStorage.getItem('Auth_user');
+
+            if (storageUser) {
+                if (JSON.parse(storageUser).expiration === format(new Date(), 'dd-MM-yyyy')) {
+                    signOut();
+                    console.log('Expiration')
+                }
+            }
+        }
+        _()
+
+    }, []);
+
     useEffect(() => {
         api.get('/rescues')
             .then(res => {
@@ -87,7 +126,6 @@ export default function AuthProvider({ children }) {
         socket.on('cartAll', (data) => {
             setCartSize(data.length);
             setMyCart([]);
-            console.log(data)
             data.forEach(value => {
                 setMyCart(oldArray => [...oldArray, value]);
             });
@@ -131,6 +169,7 @@ export default function AuthProvider({ children }) {
     }, [user, users]);
 
 
+
     //Cadastrar usuario
     async function signUp(resData) {
         // setLoading(true);
@@ -160,7 +199,8 @@ export default function AuthProvider({ children }) {
                             phone: person.phone,
                             status: person.status ? true : false,
                             pt: person.pt,
-                            kg: person.kg
+                            kg: person.kg,
+                            expiration: expiration()
                         });
                         window.location.replace('/');
                     })
@@ -177,7 +217,8 @@ export default function AuthProvider({ children }) {
                         phone: person.phone,
                         status: person.status ? true : false,
                         pt: person.pt,
-                        kg: person.kg
+                        kg: person.kg,
+                        expiration: expiration()
                     });
 
                     window.location.replace('/');
@@ -205,7 +246,8 @@ export default function AuthProvider({ children }) {
                     phone: person.phone,
                     status: person.status ? true : false,
                     pt: person.pt,
-                    kg: person.kg
+                    kg: person.kg,
+                    expiration: expiration()
                 });
             });
             runSpots()
@@ -244,7 +286,7 @@ export default function AuthProvider({ children }) {
             district: data.district,
             num: data.num,
             road: data.road,
-            state: data.state
+            state: data.state,
         }).then(res => {
             // console.log(res)
             setCloseMap(true);
@@ -255,7 +297,6 @@ export default function AuthProvider({ children }) {
     };
 
     async function updateRescues(data) {
-        console.log(data)
         await api.post('/rescuesUp', {
             id: data.id,
             delivered: data.delivered,
@@ -303,7 +344,6 @@ export default function AuthProvider({ children }) {
     };
 
     async function newCart(data) {
-        console.log(data)
         await api.post('/newCart', {
             id_user: data.id_user,
             image: data.image.uri,
@@ -432,7 +472,7 @@ export default function AuthProvider({ children }) {
             kg: data.kg
         }).then(async res => {
             setLoading(false);
-            let filter = await users.filter(person => person.id == data.id);
+            let filter = await users.filter(person => person.id === data.id);
             await filter.forEach(element => {
                 storageUser({
                     account: element.account ? true : false,
@@ -446,6 +486,7 @@ export default function AuthProvider({ children }) {
                     kg: element.kg
                 })
             });
+            window.location.reload();
         })
 
     };

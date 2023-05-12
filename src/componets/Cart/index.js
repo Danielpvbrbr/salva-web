@@ -48,7 +48,7 @@ export default function Cart({ AuthContext, Link }) {
                 kg: user.kg,
                 pt: user.pt - sum(),
             });
-            window.location.replace('/');
+            // window.location.replace('/');
         };
     };
 
