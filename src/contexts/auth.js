@@ -370,11 +370,9 @@ export default function AuthProvider({ children }) {
             })
     };
 
-    async function deleteAllUsers(id) {
-        await api.delete(`/deleteAll/${id}`)
-            .then((response) => {
-                window.location.replace('/');
-            })
+    function deleteAllUsers(id) {
+        api.delete(`/deleteAll/${id}`);
+        window.location.replace('/');
     };
 
     async function records(data) {

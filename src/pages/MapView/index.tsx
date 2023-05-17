@@ -194,11 +194,8 @@ const MapView: React.VFC = ({ AuthContext }) => {
       <button id="btnSbm" style={{
         width: '100%',
         height: 35,
-        marginTop: 10,
-        backgroundColor: '#B22222',
-        color: '#fff',
-        border: 'none'
-      }} onClick={signOut}>Ja Cadastrei?</button>
+        marginTop: 10
+      }} onClick={signOut}>Voltar?</button>
     </div>
   );
 

@@ -3,7 +3,7 @@ import './index.css';
 import 'react-circular-progressbar/dist/styles.css';
 import { FiUsers, FiX } from 'react-icons/fi';
 import Switch from 'react-input-switch';
-
+import { Title,Remove } from "./styled";
 
 import Header from '../../componets/Header';
 
@@ -116,9 +116,9 @@ export default function UsersAdm({ AuthContext, Link, ReactLoading }) {
             <Header rota="/users" AuthContext={AuthContext} Link={Link} />
             <div id="body">
                 <div id="containTitle" >
-                    <div id="title">
+                    <Title id="title">
                         <h3>Lista de Usuários!</h3>
-                    </div>
+                    </Title>
                 </div>
 
                 <div id="containProduct" >
@@ -130,9 +130,9 @@ export default function UsersAdm({ AuthContext, Link, ReactLoading }) {
                                         <h3>{v.name}</h3>
                                     </section>
 
-                                    <section id="areClose">
-                                        <FiX id="iconClose" onClick={() => deleteAllUsers(v.id)} />
-                                    </section>
+                                    <Remove id="areClose">
+                                        <FiX id="iconClose" onClick={() => deleteAllUsers(v.id)} cursor='pointer'/>
+                                    </Remove>
 
                                 </div>
                             )
@@ -162,8 +162,6 @@ export default function UsersAdm({ AuthContext, Link, ReactLoading }) {
                                     autoFocus
                                     disabled={disabled}
                                 />
-
-
                                 <label>Telefone:</label>
                                 <input
                                     type="text"
