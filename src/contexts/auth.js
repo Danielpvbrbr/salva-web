@@ -230,19 +230,11 @@ export default function AuthProvider({ children }) {
 
     async function signIn(phone, password) {
         const phonePerson = '+' + phone;
-
-        await api.get('/teste/dada')
-            .then(res => {
-                console.log(res)
-            }).catch(err=>{
-                console.log(err)
-            })
-
         await api.post('/signIn', {
             phone: phonePerson,
             password: password,
         }).then(res => {
-            console.log(res)
+           
             res.data.forEach(person => {
                 setUser(person);
                 storageUser({
@@ -260,7 +252,7 @@ export default function AuthProvider({ children }) {
             });
             runSpots()
         }).catch(err => {
-            console.log(err);
+         
             alert('Usuário ou senha incorrentos!')
         });
     };
