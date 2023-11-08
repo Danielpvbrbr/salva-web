@@ -99,7 +99,7 @@ export default function AuthProvider({ children }) {
             if (storageUser) {
                 if (JSON.parse(storageUser).expiration === format(new Date(), 'dd-MM-yyyy')) {
                     signOut();
-                    console.log('Expiration')
+                    // console.log('Expiration')
                 }
             }
         }
@@ -229,7 +229,6 @@ export default function AuthProvider({ children }) {
     };
 
     async function signIn(phone, password) {
-
         const phonePerson = '+' + phone;
         await api.post('/signIn', {
             phone: phonePerson,
@@ -484,7 +483,7 @@ export default function AuthProvider({ children }) {
                     kg: element.kg
                 })
             });
-            window.location.reload();
+            window.location.replace('/');
         })
 
     };
